@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AdminPanelTutorial.Models.Customer>
+
+@{
+    ViewData["Title"] = "Customer List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Customer</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@customer.Name</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+                <td>@customer.Address</td>
+                <td>
+                    <a href="@Url.Action("Detail", new { id = customer.Id })" class="btn btn-info">Details</a>
+                    <a href="@Url.Action("Edit", new { id = customer.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = customer.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Actions</th>
+    </tr>
+</table>

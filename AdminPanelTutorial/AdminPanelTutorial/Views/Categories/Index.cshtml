@@ -1,0 +1,44 @@
+﻿@model IEnumerable<AdminPanelTutorial.Models.Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>Categories</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            @* <th>Description</th> *@
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Id</td>
+                <td>@category.Name</td>
+                @* <td>@category.Description</td> *@
+                <td>
+                    <a asp-action="Show" asp-route-id="@category.Id" class="btn btn-info">Show</a>
+                    <a asp-action="Edit" asp-route-id="@category.Id" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            @* <th>Description</th> *@
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Create New Category</a>

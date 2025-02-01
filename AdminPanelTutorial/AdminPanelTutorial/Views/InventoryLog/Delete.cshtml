@@ -1,0 +1,43 @@
+﻿@model AdminPanelTutorial.Models.InventoryLog
+
+@{
+    ViewBag.Title = "Delete Inventory Log";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="form-group">
+    <label for="Product">Product</label>
+    <p>@Model.Product.Name</p>
+</div>
+
+<div class="form-group">
+    <label for="QuantityChanged">Quantity Changed</label>
+    <p>@Model.QuantityChanged</p>
+</div>
+
+<div class="form-group">
+    <label for="ChangeType">Change Type</label>
+    <p>@Model.ChangeType</p>
+</div>
+
+<div class="form-group">
+    <label for="Reason">Reason</label>
+    <p>@Model.Reason</p>
+</div>
+
+<div class="form-group">
+    <label for="CreatedAt">Created At</label>
+    <p>@Model.CreatedAt</p>
+</div>
+
+<div class="form-group">
+    <label for="UpdatedAt">Updated At</label>
+    <p>@Model.UpdatedAt</p>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,60 @@
+﻿@model IEnumerable<AdminPanelTutorial.Models.Permission>
+
+@{
+    var fullUrl = $"Dashboard{ViewContext.HttpContext.Request.Path}{ViewContext.HttpContext.Request.QueryString}";
+}
+
+<p class=" float-right"> @fullUrl</p>
+
+
+
+@{
+    ViewData["Title"] = "Permissions List";
+}
+
+<h2>Permissions</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<a href="@Url.Action("Create")" class="btn btn-primary float-right">Create New Permission</a>
+
+
+<table class="table" border="1">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var permission in Model)
+        {
+            <tr>
+                <td>@permission.Id</td>
+                <td>@permission.Name</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = permission.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = permission.Id })" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+</table>

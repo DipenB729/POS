@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\DOTNET\\AdminPanelTutorial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\orderdetail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\orderdetail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\orderdetail\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\orderdetail\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T13:03:20.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T12:58:05.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T12:56:03.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\OrderDetail\\Index.cshtml",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Index.cshtml*",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\OrderDetail\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T12:49:50.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Models\\OrderItem.cs",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Models\\OrderItem.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T12:41:29.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T12:26:11.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Models\\Payment.cs",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Models\\Payment.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T13:18:06.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T12:49:13.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Index.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Payments\\Index.cshtml",
+              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Index.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Payments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T12:22:36.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

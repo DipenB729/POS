@@ -1,0 +1,39 @@
+﻿@model OrderDetail 
+
+
+@{
+    ViewData["Title"] = "Order Detail";
+}
+
+<h2>Order Detail</h2>
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <td>@Model.Id</td>
+        </tr>
+        <tr>
+            <th>Order ID</th>
+            <td>@Model.OrderId</td>
+        </tr>
+        <tr>
+            <th>Product ID</th>
+            <td>@Model.ProductId </td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>@Model.Quantity</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>@Model.Price</td>
+        </tr>
+        <tr>
+            <th>Total Price</th>
+            <td>@(Model.Quantity * Model.Price)</td>
+        </tr>
+    </table>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

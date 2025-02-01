@@ -1,0 +1,29 @@
+﻿@model AdminPanelTutorial.Models.Permission
+@{
+    var fullUrl = $"Dashboard{ViewContext.HttpContext.Request.Path}{ViewContext.HttpContext.Request.QueryString}";
+}
+
+<p class=" float-right"> @fullUrl</p>
+@{
+    ViewData["Title"] = "Edit Permission";
+}
+
+
+<h2>Edit Permission</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

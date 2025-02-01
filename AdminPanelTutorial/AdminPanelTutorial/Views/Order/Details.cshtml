@@ -1,0 +1,40 @@
+﻿@model AdminPanelTutorial.Models.Order
+
+@{
+    ViewData["Title"] = "Order Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Order Details</h4>
+    <hr />
+    <div>
+        <strong>Order Number:</strong> @Model.OrderNumber
+    </div>
+    <div>
+        <strong>Customer:</strong> @Model.Customer.Name
+    </div>
+    <div>
+        <strong>Cashier:</strong> @Model.User.Name
+    </div>
+    <div>
+        <strong>Total Price:</strong> @Model.TotalPrice
+    </div>
+    <div>
+        <strong>Payment Method:</strong> @Model.PaymentMethod
+    </div>
+    <div>
+        <strong>Status:</strong> @Model.Status
+    </div>
+    <div>
+        <strong>Created At:</strong> @Model.CreatedAt
+    </div>
+    <div>
+        <strong>Updated At:</strong> @Model.UpdatedAt
+    </div>
+
+    <div>
+        <a href="@Url.Action("Index", "Order")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

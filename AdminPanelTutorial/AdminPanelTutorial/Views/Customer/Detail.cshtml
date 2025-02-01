@@ -1,0 +1,20 @@
+﻿@model AdminPanelTutorial.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h3>Name: @Model.Name</h3>
+    <p>Email: @Model.Email</p>
+    <p>Phone: @Model.Phone</p>
+    <p>Address: @Model.Address</p>
+    <p>Created At: @Model.CreatedAt</p>
+    <p>Updated At: @Model.UpdatedAt</p>
+</div>
+
+<p>
+    <a href="@Url.Action("Index")" class="btn btn-primary">Back to List</a>
+</p>

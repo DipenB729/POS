@@ -1,0 +1,22 @@
+﻿@model AdminPanelTutorial.Models.Permission
+@{
+    var fullUrl = $"Dashboard{ViewContext.HttpContext.Request.Path}{ViewContext.HttpContext.Request.QueryString}";
+}
+
+<p class=" float-right"> @fullUrl</p>
+@{
+    ViewData["Title"] = "Create Permission";
+}
+
+<h2>Create Permission</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<a href="@Url.Action("Index")">Back to List</a>

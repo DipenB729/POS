@@ -1,0 +1,32 @@
+﻿@model Payment
+
+@{
+    ViewData["Title"] = "Payment Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Payment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>ID</dt>
+        <dd>@Model.Id</dd>
+
+        <dt>Order Number</dt>
+        <dd>@Model.Order.OrderNumber</dd>
+
+        <dt>Amount</dt>
+        <dd>@Model.Amount</dd>
+
+        <dt>Payment Method</dt>
+        <dd>@Model.PaymentMethod</dd>
+
+        <dt>Payment Date</dt>
+        <dd>@Model.PaymentDate</dd>
+    </dl>
+</div>
+
+<a href="@Url.Action("Edit", "Payments", new { id = Model.Id })">Edit</a> |
+<a href="@Url.Action("Delete", "Payments", new { id = Model.Id })">Delete</a> |
+<a href="@Url.Action("Index", "Payments")">Back to List</a>

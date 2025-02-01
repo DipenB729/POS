@@ -1,0 +1,46 @@
+﻿@model AdminPanelTutorial.Models.InventoryLog
+
+@{
+    ViewBag.Title = "Edit Inventory Log";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label for="ProductId">Product</label>
+        <select asp-for="ProductId" class="form-control" asp-items="@(new SelectList(ViewBag.Products, "Id", "Name", Model.ProductId))">
+            <option value="">Select Product</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="QuantityChanged">Quantity Changed</label>
+        <input type="number" asp-for="QuantityChanged" class="form-control" />
+    </div>
+
+    <div class="form-group">
+    <label for="ChangeType">Change Type</label>
+    <select asp-for="ChangeType" class="form-control" asp-items="@(new SelectList(new[] { "addition", "sale", "manual adjustment" }, Model.ChangeType))">
+        <option value="">Select Change Type</option>
+    </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="Reason">Reason</label>
+        <input type="text" asp-for="Reason" class="form-control" placeholder="e.g., restocked, damaged (optional)" />
+    </div>
+
+    <div class="form-group">
+        <label for="CreatedAt">Created At</label>
+        <input type="datetime-local" asp-for="CreatedAt" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="UpdatedAt">Updated At</label>
+        <input type="datetime-local" asp-for="UpdatedAt" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

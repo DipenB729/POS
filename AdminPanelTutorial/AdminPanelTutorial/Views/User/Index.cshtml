@@ -1,0 +1,31 @@
+﻿@model IEnumerable<AdminPanelTutorial.Models.User>
+
+<h2 class="mt-4">Users</h2>
+
+<a href="@Url.Action("Create", "User")" class="btn btn-primary mb-3">Create New User</a>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>@user.Role.Name</td>
+                <td>
+                    <a href="@Url.Action("Show", "User", new { id = user.Id })" class="btn btn-info btn-sm">Show</a>
+                    <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="@Url.Action("Delete", "User", new { id = user.Id })" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

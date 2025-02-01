@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AdminPanelTutorial.Models.Role>
+
+@{
+    ViewData["Title"] = "Roles Index";
+}
+
+<h1>Roles</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Role</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Permissions</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var role in Model)
+        {
+            <tr>
+                <td>@role.Id</td>
+                <td>@role.Name</td>
+                <td>
+                    @foreach (var permission in role.Permissions)
+                    {
+                        <span>@permission.Name</span>
+
+                        <br />
+                    }
+                </td>
+                <td>
+                    <a href="@Url.Action("Show", new { id = role.Id })" class="btn btn-info">Show</a>
+                    <a href="@Url.Action("Edit", new { id = role.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = role.Id })" class="btn btn-danger">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Permissions</th>
+        <th>Actions</th>
+    </tr>
+</table>

@@ -1,0 +1,35 @@
+﻿@model AdminPanelTutorial.Models.Role
+
+@{
+    ViewData["Title"] = "Role Details";
+}
+
+<h1>Role Details</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h3>Role Information</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.Id</p>
+        <p><strong>Name:</strong> @Model.Name</p>
+
+        <h3>Permissions</h3>
+        @if (Model.Permissions != null && Model.Permissions.Any())
+        {
+            <ul>
+                @foreach (var permission in Model.Permissions)
+                {
+                    <li>@permission.Name</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No permissions assigned.</p>
+        }
+    </div>
+    <div class="card-footer">
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
