@@ -8133,11 +8133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
+      "projectUniqueName": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
       "projectName": "AdminPanelTutorial",
-      "projectPath": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
+      "projectPath": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
       "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\obj\\",
+      "outputPath": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,29 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\DOTNET\\AdminPanelTutorial\\",
+  "WorkspaceRootPath": "G:\\POS\\AdminPanelTutorial\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\payments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\orderdetail\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\views\\orderdetail\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\orderdetail\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\dotnet\\adminpaneltutorial\\adminpaneltutorial\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|g:\\pos\\adminpaneltutorial\\adminpaneltutorial\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADD2D1CC-EFE7-416A-BAFA-5216CA0B7461}|AdminPanelTutorial\\AdminPanelTutorial.csproj|solutionrelative:adminpaneltutorial\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,89 +38,97 @@
       "DocumentGroups": [
         {
           "DockedHeight": 281,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-03T13:50:39.3Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
               "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml*",
-              "RelativeToolTip": "AdminPanelTutorial\\Views\\Payments\\Create.cshtml*",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Payments\\Create.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-03T11:43:22.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
               "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
               "RelativeToolTip": "AdminPanelTutorial\\Views\\OrderDetail\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T05:01:02.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Order\\Create.cshtml",
-              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Order\\Create.cshtml",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Order\\Create.cshtml",
-              "RelativeToolTip": "AdminPanelTutorial\\Views\\Order\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T05:00:59.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderDetailController.cs",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
-              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
-              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T04:33:01.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-02T05:01:02.139Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\OrderController.cs",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T04:32:56.097Z",
-              "EditorCaption": ""
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Views\\Order\\Create.cshtml",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "AdminPanelTutorial\\Views\\Order\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T05:00:59.904Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "OrderDetailController.cs",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\OrderDetailController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T04:33:01.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\OrderController.cs",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T04:32:56.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PaymentsController.cs",
-              "DocumentMoniker": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "DocumentMoniker": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs",
               "RelativeDocumentMoniker": "AdminPanelTutorial\\Controllers\\PaymentsController.cs",
-              "ToolTip": "G:\\DOTNET\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs*",
-              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\PaymentsController.cs*",
+              "ToolTip": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "AdminPanelTutorial\\Controllers\\PaymentsController.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T12:56:03.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T12:56:03.433Z"
             }
           ]
         },
@@ -127,10 +139,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

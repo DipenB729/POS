@@ -17,241 +17,241 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AdminPanelTutorial
 build_property.RootNamespace = AdminPanelTutorial
-build_property.ProjectDir = G:\DOTNET\AdminPanelTutorial\AdminPanelTutorial\
+build_property.ProjectDir = G:\POS\AdminPanelTutorial\AdminPanelTutorial\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\DOTNET\AdminPanelTutorial\AdminPanelTutorial
+build_property.MSBuildProjectDirectory = G:\POS\AdminPanelTutorial\AdminPanelTutorial
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Show.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Categories/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Detail.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Home/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Home/Privacy.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TG9nXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TG9nXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Details.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TG9nXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TG9nXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/InventoryLog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TG9nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Details.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/OrderDetail/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Details.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Detail.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Payments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Permission/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVybWlzc2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Show.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Products/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Show.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Role/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/Error.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_MainMenu.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_MainMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/User/Create.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/User/Delete.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/User/Edit.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/User/Index.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/User/Show.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/User/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaG93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/_ViewImports.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/_ViewStart.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DOTNET/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_Layout.cshtml]
+[G:/POS/AdminPanelTutorial/AdminPanelTutorial/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-n57yvvz4nx
