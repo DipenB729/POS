@@ -1,28 +1,53 @@
-﻿@model AdminPanelTutorial.Models.Payment
+﻿
+@model AdminPanelTutorial.Models.Payment
 
 @{
     ViewData["Title"] = "Create Payment";
+    var isCheckout = ViewBag.IsCheckout;
 }
+
+
 
 <h1>Create Payment</h1>
 
 <h4>Payment</h4>
 <hr />
-<form asp-action="Create">
+<form asp-action="Create" method="post">
+   
     <div class="form-group">
-        <label asp-for="OrderId" class="control-label"></label>
-        <select asp-for="OrderId" class="form-control" asp-items="ViewBag.Orders" id="OrderId">
-            <option value="">Select Order</option>
-        </select>
-        <span asp-validation-for="OrderId" class="text-danger"></span>
+        <label>Order ID</label>
+        @if (isCheckout == true) 
+        {
+            <input type="text" asp-for="OrderId" class="form-control" readonly />
+        }
+        else
+        {
+            <select asp-for="OrderId" class="form-control">
+                <option value="">Select Order</option>
+                @foreach (var order in ViewBag.Orders as List<Order>)
+                {
+                    <option value="@order.Id">@order.Id</option>
+                }
+            </select>
+        }
     </div>
+
 
     <div class="form-group">
         <label asp-for="Amount" class="control-label"></label>
-        <input asp-for="Amount" class="form-control" id="Amount" readonly />
+        @if (isCheckout == true)
+        {
+            <input asp-for="Amount" class="form-control" id="Amount"  readonly />
+        }
+        else{
+
+            <input asp-for="Amount" class="form-control" id="Amount"  />
+
+        }
+        
         <span asp-validation-for="Amount" class="text-danger"></span>
     </div>
-
+ 
     <div class="form-group">
         <label asp-for="PaymentMethod" class="control-label"></label>
         <input asp-for="PaymentMethod" class="form-control" />
@@ -53,40 +78,3 @@
 </form>
 
 <a asp-action="Index">Back to List</a>
-
-@section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-               $(document).ready(function () {
-            // Listen for changes to the OrderId dropdown
-            $('#OrderId').change(function () {
-                var orderId = $(this).val();  // Get the selected OrderId
-
-                // If an OrderId is selected, make an AJAX request to get the TotalPrice
-                if (orderId) {
-                    $.ajax({
-                        url: '@Url.Action("GetTotalPrice", "Payment")',  // Action to call for TotalPrice
-                        type: 'GET',
-                        data: { orderId: orderId },
-                        success: function (data) {
-                            // Check if totalPrice is returned
-                            if (data && data.totalPrice) {
-                                $('#Amount').val(data.totalPrice.toFixed(2));  // Format to two decimal places
-                            } else {
-                                $('#Amount').val('');  // Clear the Amount field if no totalPrice is returned
-                            }
-                        },
-                        error: function () {
-                            alert('Error retrieving total price.');
-                        }
-                    });
-                }
-                else {
-                    $('#Amount').val('');  // Clear the Amount field if no OrderId is selected
-                }
-            });
-        });
-
-    </script>
-}

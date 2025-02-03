@@ -35,11 +35,7 @@
         </div>
     </div>
 
-    <script>
-               $(document).ready(function() {
-            $('.js-example-basic-multiple').select2();
-        });
-    </script>
+   
 
 
   
@@ -61,8 +57,14 @@
         <input type="text" id="totalPrice" class="form-control" readonly />
     </div>
 
-    <button type="submit" class="btn btn-primary">Create</button>
+  @*   <button type="submit" class="btn btn-primary">Create</button>
     <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <button type="submit" class="btn btn-primary">CheckOut</button> *@
+
+    <button type="submit" name="action" value="Create" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <button type="submit" name="action" value="CheckOut" class="btn btn-primary">CheckOut</button>
+
 
    
 
@@ -78,5 +80,8 @@
             var totalPrice = quantity * price;
             document.getElementById('totalPrice').value = totalPrice.toFixed(2);
         }
+               $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
     </script>
 }

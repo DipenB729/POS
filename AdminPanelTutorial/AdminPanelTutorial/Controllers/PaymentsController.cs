@@ -24,24 +24,32 @@ public class PaymentsController : Controller
         return View(payments);
     }
 
-    // Create - Display the form to create a new payment
-    public IActionResult Create()
+    //Create - Display the form to create a new payment
+    public IActionResult Create(int OrderId, decimal Amount, bool isCheckout = false)
     {
-        ViewBag.Orders = new SelectList(_context.Orders, "Id", "Id");
-        return View();
+        ViewBag.IsCheckout = isCheckout;  // Set the flag in the viewbag
+
+        if (isCheckout)
+        {
+            var payment = new Payment
+            {
+                OrderId = OrderId,
+                Amount = Amount
+            };
+
+            return View(payment);
+        }
+
+        // If not coming from Checkout, show the page with order options
+        ViewBag.Orders = _context.Orders.ToList();
+        var amount = new Payment
+        {
+            Amount = Amount
+        };
+        return View(amount);
     }
-    public JsonResult GetTotalPrice(int orderId)
-    {
-        // Ensure that the OrderDetails for the given OrderId are being fetched
-        var totalPrice = _context.OrderItems
-            .Where(od => od.OrderId == orderId)
-            .Sum(od => od.Quantity * od.Price);  // Make sure this calculation matches your model
-
-        return Json(new { totalPrice });
-    }
 
 
-    // Create (POST) - Handle the form submission to create a new payment
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(Payment payment)
@@ -57,6 +65,8 @@ public class PaymentsController : Controller
         ViewBag.Orders = new SelectList(_context.Orders, "Id", "OrderNumber", payment.OrderId);  // Using ViewBag here as well
         return View(payment);
     }
+  
+
 
     // Detail - View details of a specific payment
     public async Task<IActionResult> Detail(int? id)

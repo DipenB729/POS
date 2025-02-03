@@ -1,6 +1,8 @@
 ﻿using AdminPanelTutorial.Data;
+using AdminPanelTutorial.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -38,7 +40,7 @@ public class OrderDetailController : Controller
     // GET: OrderDetail/Create
     public IActionResult Create()
     {
-      
+
         // Set ViewBag properties instead of ViewData
         ViewBag.Orders = _context.Orders.ToList(); // Fetch the list of orders
         ViewBag.Products = _context.Products.ToList(); // Fetch the list of products
@@ -50,7 +52,7 @@ public class OrderDetailController : Controller
     // POST: OrderDetail/Create
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("OrderId,Quantity,Price")] OrderDetail orderDetail, int[] ProductIds)
+    public async Task<IActionResult> Create([Bind("OrderId,Quantity,Price")] OrderDetail orderDetail, int[] ProductIds, string action)
     {
         // Ensure ViewBag is populated with Orders and Products (in case of form validation failure)
         ViewBag.Orders = _context.Orders.ToList();
@@ -59,32 +61,46 @@ public class OrderDetailController : Controller
         // Check if the model state is valid
         if (ModelState.IsValid)
         {
-            // Loop through the selected product IDs
-            foreach (var productId in ProductIds)
+
+            if (action == "Create")
             {
-                var product = await _context.Products.FindAsync(productId);
-                if (product != null)
+                foreach (var productId in ProductIds)
                 {
-                    // Create new order detail for each product selected
-                    var newOrderDetail = new OrderDetail
+                    var product = await _context.Products.FindAsync(productId);
+                    if (product != null)
                     {
-                        OrderId = orderDetail.OrderId,
-                        ProductId = productId,
-                        Quantity = orderDetail.Quantity,
-                        Price = orderDetail.Price
-                    };
-                    _context.OrderItems.Add(newOrderDetail); // Add the new order detail to the context
+                        // Create new order detail for each product selected
+                        var newOrderDetail = new OrderDetail
+                        {
+                            OrderId = orderDetail.OrderId,
+                            ProductId = productId,
+                            Quantity = orderDetail.Quantity,
+                            Price = orderDetail.Price
+                        };
+                        _context.OrderItems.Add(newOrderDetail); // Add the new order detail to the context
+                    }
                 }
+
+                // Save the changes to the database
+                await _context.SaveChangesAsync();
+
+                // Redirect to Index or another action after successfully saving
+                return RedirectToAction(nameof(Index));
+            }
+            else if (action == "CheckOut")
+            {
+                var payment = new Payment
+                {
+                    OrderId = orderDetail.OrderId,
+                    Amount = orderDetail.TotalPrice
+                };
+
+                // Redirect to Payment/Create with query parameters
+                return RedirectToAction("Create", "Payments", new { OrderId = payment.OrderId, Amount = payment.Amount, isCheckout = true });
             }
 
-            // Save the changes to the database
-            await _context.SaveChangesAsync();
-
-            // Redirect to Index or another action after successfully saving
-            return RedirectToAction(nameof(Index));
+            
         }
-
-        // If the model is not valid, redisplay the form with validation errors
         return View(orderDetail);
     }
 
