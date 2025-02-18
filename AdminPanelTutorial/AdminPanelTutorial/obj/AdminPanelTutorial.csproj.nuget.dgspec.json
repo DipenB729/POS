@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj": {}
+    "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj": {}
   },
   "projects": {
-    "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj": {
+    "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
+        "projectUniqueName": "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
         "projectName": "AdminPanelTutorial",
-        "projectPath": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
+        "projectPath": "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\obj\\",
+        "outputPath": "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,9 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

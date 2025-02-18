@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yy2KW12W4Ng=",
+  "dgSpecHash": "BqhwMi54EgM=",
   "success": true,
-  "projectFilePath": "G:\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
+  "projectFilePath": "E:\\6th sem\\POS\\AdminPanelTutorial\\AdminPanelTutorial\\AdminPanelTutorial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

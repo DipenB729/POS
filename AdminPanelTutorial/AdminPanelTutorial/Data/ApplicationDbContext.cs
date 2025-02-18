@@ -21,6 +21,7 @@ namespace AdminPanelTutorial.Data
         public DbSet<OrderDetail> OrderItems { get; set; }
         public DbSet<Payment> Payment { get; set; }
         public DbSet<InventoryLog> InventoryLogs { get; set; }
+        
 
 
 

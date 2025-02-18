@@ -34,6 +34,7 @@ namespace AdminPanelTutorial.Models
 
         [Required]
         public int QuantityInStock { get; set; }
+        public string? ImageUrl { get; set; }
 
         [Required]
         public int CategoryId { get; set; }
