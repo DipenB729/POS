@@ -45,6 +45,7 @@
             <table class="table table-sm">
                 <thead>
                     <tr>
+                        
                         <th>Product Name</th>
                         <th>Quantity</th>
                         <th>Price</th>
@@ -75,9 +76,13 @@
                 <input type="hidden" id="productIds" name="ProductIds" />
                 <input type="hidden" id="quantities" name="Quantities" />
                 <input type="hidden" id="prices" name="Prices" />
+                <input type="hidden" id="orderId" value="@ViewBag.OrderId" /> 
+
 
                 <!-- Checkout button -->
-                <button type="submit" name="action" value="CheckOut" class="btn btn-success w-100">Checkout</button>
+                <!-- Checkout button -->
+                <button type="button" class="btn btn-success w-100" onclick="redirectToPayments()">Checkout</button>
+
 
                 <!-- Create Order Detail button -->
                 <button type="submit" name="action" value="Create" class="btn btn-primary w-100 mt-2">Create Order Detail</button>
@@ -128,6 +133,19 @@
 
             document.getElementById("orderDetailsTable").innerHTML = tableHtml;
         }
+
+        //passing data to payment a
+
+                    function redirectToPayments() {
+            let totalPrice = document.getElementById("totalPrice").textContent;
+            let orderId = document.getElementById("orderId").value;  // Get OrderId from hidden input
+            let paymentMethod = document.getElementById("paymentMethod").value; // Get selected payment method
+
+            let url = `/Payments/Create?OrderId=${orderId}&Amount=${totalPrice}&PaymentMethod=${encodeURIComponent(paymentMethod)}`;
+            window.location.href = url;
+        }
+
+
 
         // Calculate total price dynamically
         function calculateTotal() {

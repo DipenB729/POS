@@ -1,80 +1,41 @@
-﻿
-@model AdminPanelTutorial.Models.Payment
+﻿@model AdminPanelTutorial.Models.Payment
 
 @{
     ViewData["Title"] = "Create Payment";
-    var isCheckout = ViewBag.IsCheckout;
 }
 
+<h2>Create Payment</h2>
 
-
-<h1>Create Payment</h1>
-
-<h4>Payment</h4>
-<hr />
 <form asp-action="Create" method="post">
-   
     <div class="form-group">
-        <label>Order ID</label>
-        @if (isCheckout == true) 
-        {
-            <input type="text" asp-for="OrderId" class="form-control" readonly />
-        }
-        else
-        {
-            <select asp-for="OrderId" class="form-control">
-                <option value="">Select Order</option>
-                @foreach (var order in ViewBag.Orders as List<Order>)
-                {
-                    <option value="@order.Id">@order.Id</option>
-                }
-            </select>
-        }
-    </div>
-
-
-    <div class="form-group">
-        <label asp-for="Amount" class="control-label"></label>
-        @if (isCheckout == true)
-        {
-            <input asp-for="Amount" class="form-control" id="Amount"  readonly />
-        }
-        else{
-
-            <input asp-for="Amount" class="form-control" id="Amount"  />
-
-        }
-        
-        <span asp-validation-for="Amount" class="text-danger"></span>
-    </div>
- 
-    <div class="form-group">
-        <label asp-for="PaymentMethod" class="control-label"></label>
-        <input asp-for="PaymentMethod" class="form-control" />
-        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+        <label for="OrderId">Order ID</label>
+        <input type="number" class="form-control" id="OrderId" name="OrderId"  />
     </div>
 
     <div class="form-group">
-        <label asp-for="PaymentDate" class="control-label"></label>
-        <input asp-for="PaymentDate" class="form-control" />
-        <span asp-validation-for="PaymentDate" class="text-danger"></span>
+        <label for="Amount">Amount</label>
+        <input type="text" class="form-control" id="Amount" name="Amount" value="@Model.Amount" readonly />
     </div>
 
     <div class="form-group">
-        <label asp-for="CreatedAt" class="control-label"></label>
-        <input asp-for="CreatedAt" class="form-control" />
-        <span asp-validation-for="CreatedAt" class="text-danger"></span>
+        <label for="PaymentMethod">Payment Method</label>
+        <input type="text" class="form-control" id="PaymentMethod" name="PaymentMethod" value="@Model.PaymentMethod" readonly />
     </div>
 
     <div class="form-group">
-        <label asp-for="UpdatedAt" class="control-label"></label>
-        <input asp-for="UpdatedAt" class="form-control" />
-        <span asp-validation-for="UpdatedAt" class="text-danger"></span>
+        <label for="PaymentDate">Payment Date</label>
+        <input type="text" class="form-control" id="PaymentDate" name="PaymentDate" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")" readonly />
     </div>
 
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <label for="CreatedAt">Created At</label>
+        <input type="text" class="form-control" id="CreatedAt" name="CreatedAt" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")" readonly />
     </div>
+
+    <div class="form-group">
+        <label for="UpdatedAt">Updated At</label>
+        <input type="text" class="form-control" id="UpdatedAt" name="UpdatedAt" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")" readonly />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Payment</button>
 </form>
-
-<a asp-action="Index">Back to List</a>

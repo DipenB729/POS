@@ -17,15 +17,18 @@ namespace AdminPanelTutorial.Controllers
         }
 
         // GET: OrderDetail/Create
-        public IActionResult Create()
+        public IActionResult Create(int orderId)
         {
+            var order = _context.Orders.Include(o => o.OrderDetails)
+                            .FirstOrDefault(o => o.Id == orderId);
+            ViewBag.OrderId = order;
             var products = _context.Products.ToList();
             if (products == null || !products.Any())
             {
                 // Handle the case where no products are available (optional)
                 return NotFound("No products available.");
             }
-
+           
             ViewBag.Products = products;  // Passing products list to the view
             return View();  // Return the Create view
         }

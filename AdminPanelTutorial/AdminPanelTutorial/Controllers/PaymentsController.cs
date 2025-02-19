@@ -23,50 +23,36 @@ public class PaymentsController : Controller
             .ToListAsync();
         return View(payments);
     }
-
-    //Create - Display the form to create a new payment
-    public IActionResult Create(int OrderId, decimal Amount, bool isCheckout = false)
+    public IActionResult Create( decimal Amount, string PaymentMethod)
     {
-        ViewBag.IsCheckout = isCheckout;  // Set the flag in the viewbag
-
-        if (isCheckout)
+        var payment = new Payment
         {
-            var payment = new Payment
-            {
-                OrderId = OrderId,
-                Amount = Amount
-            };
-
-            return View(payment);
-        }
-
-        // If not coming from Checkout, show the page with order options
-        ViewBag.Orders = _context.Orders.ToList();
-        var amount = new Payment
-        {
-            Amount = Amount
+           
+            Amount = Amount,
+            PaymentMethod = PaymentMethod,
+            PaymentDate = DateTime.Now,
+            CreatedAt = DateTime.Now,
+            UpdatedAt = DateTime.Now
         };
-        return View(amount);
+
+        // Process payment data (e.g., saving to the database, etc.)
+        return View(payment);
     }
 
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(Payment payment)
+    public IActionResult Create(Payment payment)
     {
         if (ModelState.IsValid)
         {
             payment.CreatedAt = DateTime.Now;
             payment.UpdatedAt = DateTime.Now;
-            _context.Add(payment);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            _context.Payment.Add(payment);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
-        ViewBag.Orders = new SelectList(_context.Orders, "Id", "OrderNumber", payment.OrderId);  // Using ViewBag here as well
         return View(payment);
     }
-  
-
 
     // Detail - View details of a specific payment
     public async Task<IActionResult> Detail(int? id)

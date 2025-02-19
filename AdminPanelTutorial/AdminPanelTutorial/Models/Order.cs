@@ -1,7 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using AdminPanelTutorial.Models;
 using System.ComponentModel.DataAnnotations.Schema;
-using AdminPanelTutorial.Models;
+using System.ComponentModel.DataAnnotations;
 namespace AdminPanelTutorial.Models
 {
     public class Order
@@ -44,5 +43,8 @@ namespace AdminPanelTutorial.Models
 
         // Date and time when the order was last updated
         public DateTime UpdatedAt { get; set; }
+
+        // Navigation property to OrderDetails
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }
