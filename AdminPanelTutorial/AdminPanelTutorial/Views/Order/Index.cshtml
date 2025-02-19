@@ -27,10 +27,9 @@
         {
             <tr>
                 <td>@order.OrderNumber</td>
-                 @* <td>@order.Customer?.Name ?? "Walk-in"</td>  *@
-                 <td>@order.Customer.Name</td> 
-                <td>@order.User.Name</td>
-                <td>@order.TotalPrice</td>
+                <td>@(order.Customer?.Name ?? "Walk-in")</td>
+                <td>@order.User?.Name ?? "Unknown Cashier"</td>
+                <td>@order.TotalPrice</td>  
                 <td>@order.PaymentMethod</td>
                 <td>@order.Status</td>
                 <td>

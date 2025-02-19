@@ -3,219 +3,157 @@ using AdminPanelTutorial.Models;
 using AdminPanelTutorial.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Linq;
-using System.Threading.Tasks;
 
-public class OrderDetailController : Controller
+namespace AdminPanelTutorial.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public OrderDetailController(ApplicationDbContext context)
+    public class OrderDetailController : Controller
     {
-        _context = context;
-    }
+        private readonly ApplicationDbContext _context;
 
-    // GET: OrderDetail/Index
-    public async Task<IActionResult> Index()
-    {
-        var orderDetails = _context.OrderItems.Include(o => o.Order).Include(p => p.Product);
-        return View(await orderDetails.ToListAsync());
-    }
-
-    // GET: OrderDetail/Details/5
-    public async Task<IActionResult> Details(int? id)
-    {
-        if (id == null) return NotFound();
-
-        var orderDetail = await _context.OrderItems
-            .Include(o => o.Order)
-            .Include(p => p.Product)
-            .FirstOrDefaultAsync(m => m.Id == id);
-
-        if (orderDetail == null) return NotFound();
-
-        return View(orderDetail);
-    }
-
-    // GET: OrderDetail/Create
-    public IActionResult Create()
-    {
-
-        // Set ViewBag properties instead of ViewData
-        ViewBag.Orders = _context.Orders.ToList(); // Fetch the list of orders
-        ViewBag.Products = _context.Products.ToList(); // Fetch the list of products
-
-        return View();
-    }
-
-
-    // POST: OrderDetail/Create
- 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("OrderId,Quantity,Price")] OrderDetail orderDetail, int[] ProductIds, string action)
-    {
-        // Ensure ViewBag is populated with Orders and Products
-        ViewBag.Orders = _context.Orders.ToList();
-        ViewBag.Products = _context.Products.ToList();
-
-        if (ModelState.IsValid)
+        public OrderDetailController(ApplicationDbContext context)
         {
-            // Collecting the order details for the selected products
-            foreach (var productId in ProductIds)
-            {
-                var product = await _context.Products.FindAsync(productId);
-                if (product != null)
-                {
-                    var newOrderDetail = new OrderDetail
-                    {
-                        OrderId = orderDetail.OrderId,
-                        ProductId = productId,
-                        Quantity = orderDetail.Quantity, // This can be adjusted to reflect individual product quantities if necessary
-                        Price = product.Price
-                    };
+            _context = context;
+        }
 
-                    _context.OrderItems.Add(newOrderDetail); // Add the new order detail to the context
+        // GET: OrderDetail/Create
+        public IActionResult Create()
+        {
+            var products = _context.Products.ToList();
+            if (products == null || !products.Any())
+            {
+                // Handle the case where no products are available (optional)
+                return NotFound("No products available.");
+            }
+
+            ViewBag.Products = products;  // Passing products list to the view
+            return View();  // Return the Create view
+        }
+
+        // POST: OrderDetail/Create or Edit
+        [HttpPost]
+        public IActionResult Create(string productIds, string quantities, string prices, string paymentMethod)
+        {
+            if (string.IsNullOrEmpty(paymentMethod))
+            {
+                ModelState.AddModelError("PaymentMethod", "Payment Method is required.");
+                return View(); // Return to the form with an error if payment method is missing
+            }
+
+            // Split product IDs, quantities, and prices into arrays
+            var productIdsArray = productIds.Split(',').Select(int.Parse).ToList();
+            var quantitiesArray = quantities.Split(',').Select(int.Parse).ToList();
+            var pricesArray = prices.Split(',').Select(decimal.Parse).ToList();
+
+            // Create an order first
+            var newOrder = new Order
+            {
+                OrderNumber = GenerateOrderNumber(),  // Generate order number (you can implement this logic)
+                CustomerId = null,  // Assuming null for walk-ins, set actual customer ID if applicable
+                UserId = 1,  // Set UserId of the cashier handling the order (this should come from the logged-in user)
+                TotalPrice = 0,  // Will calculate the total later
+                PaymentMethod = paymentMethod,  // Cash/Card/Mobile Wallet
+                Status = "Pending",  // Or any default status
+                CreatedAt = DateTime.Now,
+                UpdatedAt = DateTime.Now
+            };
+
+            // Add the order to the context
+            _context.Orders.Add(newOrder);
+            _context.SaveChanges();  // Save to generate OrderId
+
+            // Initialize total price for the order
+            decimal totalPrice = 0;
+
+            // Create order details for the selected products
+            for (int i = 0; i < productIdsArray.Count; i++)
+            {
+                var orderDetail = new OrderDetail
+                {
+                    OrderId = newOrder.Id,  // Link this order detail to the newly created order
+                    ProductId = productIdsArray[i],
+                    Quantity = quantitiesArray[i],
+                    Price = pricesArray[i]
+                };
+
+                // Add the order detail to the context
+                _context.OrderItems.Add(orderDetail);
+
+                // Calculate total price for the order
+                totalPrice += pricesArray[i] * quantitiesArray[i];
+            }
+
+            // Update total price for the order
+            newOrder.TotalPrice = totalPrice;
+            _context.SaveChanges();  // Save the order details and update the total price
+
+            return RedirectToAction("Index");  // Redirect to the index page or another page
+        }
+
+        private string GenerateOrderNumber()
+        {
+            // You can implement a custom logic to generate unique order numbers, e.g., Order-001, Order-002, etc.
+            return "Order-" + DateTime.Now.ToString("yyyyMMddHHmmss");
+        }
+
+        // GET: OrderDetail/Index
+        public IActionResult Index()
+        {
+            var orderDetails = _context.OrderItems
+                .Include(od => od.Product)
+                .Select(od => new OrderDetailViewModel
+                {
+                    OrderId = od.OrderId,
+                    Products = new List<OrderDetailViewModel.ProductViewModel>
+                    {
+                new OrderDetailViewModel.ProductViewModel
+                {
+                    ProductId = od.ProductId,
+                    ProductName = od.Product.Name,
+                    Price = od.Price,
+                    Quantity = od.Quantity
                 }
-            }
-
-            await _context.SaveChangesAsync(); // Save the changes to the database
-
-            // If action is "CheckOut", pass the data to the PaymentController
-            if (action == "CheckOut")
-            {
-                return RedirectToAction("Create", "Payments", new { orderDetail.OrderId });
-            }
-
-            return RedirectToAction(nameof(Index)); // Redirect to Index after successful creation
-        }
-
-        return View(orderDetail); // Return the view if model state is invalid
-    }
-
-
-    // GET: OrderDetail/Edit/5
-    public IActionResult Edit(int id)
-    {
-        // Retrieve the order detail by its ID
-        var orderDetail = _context.OrderItems.Find(id);
-
-        // If the order detail is not found, redirect to the index page
-        if (orderDetail == null)
-        {
-            return NotFound();
-        }
-
-        // Populate ViewBag with Orders and Products for the dropdowns
-        ViewBag.Orders = _context.Orders.ToList();
-        ViewBag.Products = _context.Products.ToList();
-
-        // Pass the order detail to the view
-        return View(orderDetail);
-    }
-
-
-    // POST: OrderDetail/Edit/5
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id, [Bind("Id,OrderId,Quantity,Price")] OrderDetail orderDetail, int[] ProductIds)
-    {
-        // Ensure ViewBag is populated with Orders and Products (in case of form validation failure)
-        ViewBag.Orders = _context.Orders.ToList();
-        ViewBag.Products = _context.Products.ToList();
-
-        // Check if the ID in the URL matches the ID in the form
-        if (id != orderDetail.Id)
-        {
-            return NotFound();
-        }
-
-        // Check if the model state is valid
-        if (ModelState.IsValid)
-        {
-            try
-            {
-                // Delete the old order details for this order
-                var oldOrderDetails = _context.OrderItems.Where(od => od.OrderId == orderDetail.OrderId && od.Id != id).ToList();
-                _context.OrderItems.RemoveRange(oldOrderDetails);
-
-                // Add the new order details for the selected products
-                foreach (var productId in ProductIds)
-                {
-                    var product = await _context.Products.FindAsync(productId);
-                    if (product != null)
-                    {
-                        var newOrderDetail = new OrderDetail
-                        {
-                            OrderId = orderDetail.OrderId,
-                            ProductId = productId,
-                            Quantity = orderDetail.Quantity,
-                            Price = orderDetail.Price
-                        };
-                        _context.OrderItems.Add(newOrderDetail);
                     }
-                }
+                }).ToList();
 
-                // Save changes to the database
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
+            return View(orderDetails); // Passing OrderDetailViewModel list to the view
+        }
+        public IActionResult Delete(int id)
+        {
+            var orderDetail = _context.OrderItems
+                .Include(od => od.Product)
+                .FirstOrDefault(od => od.OrderId == id); // Assuming OrderId is the identifier for OrderDetail
+
+            if (orderDetail == null)
             {
-                if (!_context.OrderItems.Any(e => e.Id == orderDetail.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
 
-            // Redirect to Index or another action after successfully saving
-            return RedirectToAction(nameof(Index));
+            return View(orderDetail);
         }
 
-        // If the model is not valid, redisplay the form with validation errors
-        return View(orderDetail);
-    }
-
-
-
-    // GET: OrderDetail/Delete/5
-    public IActionResult Delete(int id)
-    {
-        // Retrieve the order detail by its ID
-        var orderDetail = _context.OrderItems
-            .FirstOrDefault(m => m.Id == id);
-
-        // If the order detail is not found, redirect to the index page
-        if (orderDetail == null)
+        // POST: OrderDetail/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
         {
-            return NotFound();
+            var orderDetail = _context.OrderItems
+                .FirstOrDefault(od => od.OrderId == id);
+
+            if (orderDetail != null)
+            {
+                _context.OrderItems.Remove(orderDetail);
+                _context.SaveChanges();
+            }
+
+            return RedirectToAction(nameof(Index)); // Redirect to Index after deletion
         }
 
-        // Pass the order detail to the view
-        return View(orderDetail);
-    }
-
-
-    // POST: OrderDetail/Delete/5
-    [HttpPost, ActionName("Delete")]
-    [ValidateAntiForgeryToken]
-    public async Task<IActionResult> DeleteConfirmed(int id)
-    {
-        var orderDetail = await _context.OrderItems.FindAsync(id);
-
-        if (orderDetail != null)
+        // Handle the checkout logic here (if required)
+        public IActionResult Checkout()
         {
-            _context.OrderItems.Remove(orderDetail); // Delete the order detail
-            await _context.SaveChangesAsync(); // Save changes
+            // Implement checkout logic
+            return View();
         }
-
-        // Redirect to Index after deletion
-        return RedirectToAction(nameof(Index));
     }
-
-
 }

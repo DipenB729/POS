@@ -1,42 +1,47 @@
-﻿@model IEnumerable<OrderDetail>
+﻿@model List<OrderDetailViewModel>  
 
 @{
     ViewData["Title"] = "Order Details";
 }
 
-<h2>Order Details</h2>
-
-<!-- Create Button -->
-<a asp-action="Create" class="btn btn-success mb-3">Create New Order Detail</a>
-
-<table class="table">
+<table class="table table-sm">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Order ID</th>
-            <th>Product ID</th>
+           
+            <th>OrderId</th>
+            <th>Product Name</th>
             <th>Quantity</th>
             <th>Price</th>
             <th>Total Price</th>
-            <th>Actions</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+       
+        @foreach (var orderDetail in Model)
         {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.OrderId</td>
-                <td>@item.ProductId</td>
-                <td>@item.Quantity</td>
-                <td>@item.Price</td>
-                <td>@(item.Quantity * item.Price)</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
-                </td>
-            </tr>
+            var isFirstProductOfBatch = true;
+            @foreach (var product in orderDetail.Products)
+            {
+               
+                <tr>
+                    
+                    <td>@orderDetail.OrderId</td>
+                    <td>@product.ProductName</td>
+                    <td>@product.Quantity</td>
+                    <td>Rs. @product.Price</td>
+                    <td>Rs. @product.TotalPrice</td>
+                    <td>
+                        <a href="@Url.Action("Delete", "OrderDetail", new { id = orderDetail.OrderId })" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
         }
     </tbody>
 </table>
+
+<!-- Create Order Detail button -->
+<a asp-action="Create" class="btn btn-primary w-100 mt-2">Create Order Detail</a>
+
+<!-- Back to List button (if applicable) -->
+<a asp-action="Index" class="btn btn-secondary w-100 mt-2">Back to List</a>
