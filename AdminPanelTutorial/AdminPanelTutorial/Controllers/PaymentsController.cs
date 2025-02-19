@@ -23,21 +23,16 @@ public class PaymentsController : Controller
             .ToListAsync();
         return View(payments);
     }
-    public IActionResult Create( decimal Amount, string PaymentMethod)
+    public IActionResult Create(string[] name, int[] quantity, decimal[] price, decimal[] total, decimal Amount, string PaymentMethod)
     {
-        var payment = new Payment
-        {
-           
-            Amount = Amount,
-            PaymentMethod = PaymentMethod,
-            PaymentDate = DateTime.Now,
-            CreatedAt = DateTime.Now,
-            UpdatedAt = DateTime.Now
-        };
+        // Store data in ViewBag to display in the view
+        ViewBag.Products = name.Select((n, i) => new { Name = n, Quantity = quantity[i], Price = price[i], Total = total[i] }).ToList();
+        ViewBag.Amount = Amount;
+        ViewBag.PaymentMethod = PaymentMethod;
 
-        // Process payment data (e.g., saving to the database, etc.)
-        return View(payment);
+        return View();
     }
+
 
 
     [HttpPost]
@@ -86,7 +81,7 @@ public class PaymentsController : Controller
         {
             return NotFound();
         }
-        ViewBag.Orders = new SelectList(_context.Orders, "Id", "OrderNumber", payment.OrderId);  // Using ViewBag for orders
+        // Using ViewBag for orders
         return View(payment);
     }
 
@@ -121,7 +116,7 @@ public class PaymentsController : Controller
             }
             return RedirectToAction(nameof(Index));
         }
-        ViewBag.Orders = new SelectList(_context.Orders, "Id", "OrderNumber", payment.OrderId);  // Using ViewBag
+         // Using ViewBag
         return View(payment);
     }
 

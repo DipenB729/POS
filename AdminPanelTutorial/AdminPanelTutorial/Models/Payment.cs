@@ -6,8 +6,8 @@ namespace AdminPanelTutorial.Models
     public class Payment
     {
         public int Id { get; set; }  // Primary Key (id)
-        [ForeignKey("Order")]
-        public int OrderId { get; set; }  // Foreign Key (order_id, references Order.Id)
+     
+      
         public decimal Amount { get; set; }  // Amount of the payment
         public string PaymentMethod { get; set; }  // Method of payment (e.g., Credit Card, PayPal)
         public DateTime PaymentDate { get; set; }  // Date and time when the payment was made

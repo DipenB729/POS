@@ -136,14 +136,28 @@
 
         //passing data to payment a
 
-                    function redirectToPayments() {
-            let totalPrice = document.getElementById("totalPrice").textContent;
-            let orderId = document.getElementById("orderId").value;  // Get OrderId from hidden input
-            let paymentMethod = document.getElementById("paymentMethod").value; // Get selected payment method
+                   
+        function redirectToPayments() {
+            let products = selectedProducts.map(p => ({
+                name: encodeURIComponent(p.name),
+                quantity: p.quantity,
+                price: p.price,
+                totalPrice: (p.price * p.quantity).toFixed(2)
+            }));
 
-            let url = `/Payments/Create?OrderId=${orderId}&Amount=${totalPrice}&PaymentMethod=${encodeURIComponent(paymentMethod)}`;
+            let totalAmount = document.getElementById("totalPrice").textContent;
+            let paymentMethod = document.getElementById("paymentMethod").value;
+
+            // Convert products to query string
+            let productParams = products.map(p =>
+                `name=${p.name}&quantity=${p.quantity}&price=${p.price}&total=${p.totalPrice}`
+            ).join("&");
+
+            let url = `/Payments/Create?${productParams}&Amount=${totalAmount}&PaymentMethod=${encodeURIComponent(paymentMethod)}`;
             window.location.href = url;
         }
+    
+
 
 
 

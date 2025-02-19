@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminPanelTutorial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1231423ee14eb183bef0cdc6b333c6ccc8a13a80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c85293447f8e9ea211bc01ed796c2d803446eabe")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminPanelTutorial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminPanelTutorial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -17,11 +17,10 @@ namespace AdminPanelTutorial.Controllers
         }
 
         // GET: OrderDetail/Create
-        public IActionResult Create(int orderId)
+        public IActionResult Create()
         {
-            var order = _context.Orders.Include(o => o.OrderDetails)
-                            .FirstOrDefault(o => o.Id == orderId);
-            ViewBag.OrderId = order;
+            
+            
             var products = _context.Products.ToList();
             if (products == null || !products.Any())
             {
